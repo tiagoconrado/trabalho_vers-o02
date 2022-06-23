@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Personagens</title>
+    <link rel="stylesheet" href="css/style_criar_personagens.css">
+    <link rel="stylesheet" href="css/style_cabeçalho.css">
+    <link rel="stylesheet" href="css/style_index.css">    
+
+</head>
+<body>
+    <nav>
+        <div class="logo">BTM@EB :: Criação dos Personagens</div>
+        <a href="sobre.html">Sobre</a>
+        <a href="jogabilidade_e_personagens.html">Jogabilidade e Personagens</a>
+        <a href="index.html">Inicio</a>
+    </nav>
+    <br><br>
+    <section id="CriarPersonagens">
+        <div class="box" style="margin-left: 20px;margin-top: 20px;">
+        <form action="">
+            <fieldset>
+                <legend><b>::: Personagem :::</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required="" autofocus>
+                    <label for="nome" class="labelInput">Nome para o personagem</label>
+                </div>
+                <br>
+                <input type="radio" id="incuir" name="0" value="0" required="">
+                <label for="incuir">Incuir este personagem na batalha.</label>
+                <br>
+             
+                <div class="float-container1">
+                <div class="flex-container">                        
+                <div class="flex-child magenta">
+                    
+                    <p>Nação</p>  
+
+                    <div class="flex-contorno" style="padding-left: 15px;padding-right: 15px;border-right-width: 3px;margin-right: 50px;">
+                        <br>                                          
+                        <input type="radio" id="anao" name="nome" value="anao" required="">
+                        <label for="anao">Anão</label>
+                        <br>
+                        <input type="radio" id="hobbit" name="nome" value="hobbit" required="">
+                        <label for="hobbit">Hobbit</label>
+                        <br>
+                        <input type="radio" id="cavaleiro_de_rohan" name="nome" value="cavaleiro_de_rohan" required="">
+                        <label for="cavaleiro_de_rohan">Cavaleiro de Rohan</label>
+                        <br>
+                        <input type="radio" id="guerreiro_de_gondor" name="nome" value="guerreiro_de_gondor" required="">
+                        <label for="guerreiro_de_gondor">Guerreiro de Gondor</label>
+                        <br>
+                        <input type="radio" id="elfo_da_floresta" name="nome" value="elfo_da_floresta" required="">
+                        <label for="elfo_da_floresta">Elfo da Floresta</label>
+                        <br>
+                        <input type="radio" id="elfo_de_othlorien" name="nome" value="elfo_de_othlorien" required="">
+                        <label for="elfo_de_othlorien">Elfo de Lothlorien</label>
+                        <br>
+                        <input type="radio" id="orc_snaga" name="nome" value="orc_snaga" required="">
+                        <label for="orc_snaga">Orc Snaga</label>
+                        <br>
+                        <input type="radio" id="uruk_hai" name="nome" value="uruk_hai" required="">
+                        <label for="uruk_hai">Uruk-hai</label>
+                        <br><br>
+                        </div>                        
+                        <br>
+                    </div>
+                     
+                    <div class="flex-contorno" style="padding-left: 15px;padding-right: 15px;border-right-width: 3px;margin-right: 50px;">
+                        <br>
+                        <label for="forca">Força</label>                        
+                        <Input type="number" value="20">
+                        <br><br>
+                        <label for="precisao">Precisão</label>
+                        <Input type="number" value="20">
+                        <br><br>
+                        <label for="velocidade">Velocidade</label>
+                        <Input type="number" value="20">
+                        <br><br>
+                        <label for="armadura">Armadura</label>
+                        <Input type="number" value="20">
+                        <br><br>
+                        <label for="recuperacao">Recuperação</label>
+                        <Input type="number" value="20">
+                        <br><br><br>
+                        </div>                    
+                    </div>
+                    <br>
+                    
+                    <center>
+                        <button id="add" onclick="duplicarCampos()">Adicionar Novo Personagem</button>
+                        
+                        <button id="remover" onclick="removerCampos()">Remover Personagem</button>
+                        <br>   
+                    </center>
+                    <section id="comandos" class="aparecer"></section>
+                </div>
+                </div>              
+
+            </fieldset>
+        </form>
+    </section>
+    </div>
+    <br>
+    <center><button type="submit" name="submit" id="submit"><img src="imagem/icon-buy.png" width="27" height="22">  Finalizar Personagem</button></center>
+<script src="scripit/javascripit_personagem.js"></script>
+
+<footer>Curso de TI da Estácio de Brasília em 2022.1 (TIEB 2022.1)
+        <BR>Todos os direitos reservados.</BR>
+</body>
+</html>

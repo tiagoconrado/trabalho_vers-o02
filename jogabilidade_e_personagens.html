@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogabilidade e Personagens</title>
+    <link rel="stylesheet" href="css/style_cabeçalho.css">
+    <link rel="stylesheet" href="css/style_index.css">
+
+    <style>
+        p{
+          text-align: justify;  
+          text-indent: 30px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">BTM@EB :: Jogabilidade e Personagens</div>
+        <a href="sobre.html">Sobre</a>
+        <a href="CriarPersonagens.html">Criação de Personagens</a>        
+        <a href="index.html">Inicio</a>
+    </nav>
+    <br><br>
+    <center>
+    <h1 style="padding-left: 20px;">Jogabilidade</h1>
+
+    <p style="text-align: justify;padding-left: 20px;padding-right: 20px;">
+        A batalha é realizada em um cenário fixo no qual podem ser alocados até oito jogadores, 
+        sendo que só pode haver um personagem de cada nação. O cenário é fixo porque a batalha 
+        inteira ocorre neste único cenário escolhido. Dentre os cenários possíveis, o jogo pode 
+        definir qualquer uma das oito casas das nações.</p>
+
+    <p style="text-align: justify;padding-left: 20px;padding-right: 20px;">
+        Não existem alianças e “amizades” entre os personagens, portanto eles se enfrentam em 
+        duelos de um contra o outro em cada rodada e o vencedor avança para a próxima rodada. 
+        No início da rodada, os personagens são distribuídos aleatoriamente em pares para realizarem a 
+        batalha e, caso a quantidade de personagens na batalha seja ímpar, um deles ficará fora da 
+        batalha e se classificará automaticamente para a rodada seguinte. Os vencedores de uma rodada 
+        são novamente distribuídos aleatoriamente para se enfrentarem em uma nova batalha. As rodadas
+         são repetidas de acordo com a quantidade restante de personagens na arena, até que ocorra a
+          batalha final e seja definido um personagem como o vencedor. O jogador que “sobrou” na 
+          rodada anterior não pode sobrar novamente na rodada seguinte. A Figura 1 exemplifica um cenário 
+          com cinco jogadores.
+    </p>
+    <p style="text-align: justify;padding-left: 20px;padding-right: 20px;">
+        A batalha é realizada em turnos de duelos diretos entre dois personagens, 
+        conforme foi descrito anteriormente. Porém, é preciso descrever com mais 
+        detalhes como se deve determinar o vencedor de cada duelo.
+    </p>
+    <p style="text-align: justify;padding-left: 20px;padding-right: 20px;">
+        Antes, deve-se observar que um duelo possui como informações de entrada: o 
+        cenário da batalha e os dois personagens do confronto com as suas características. 
+        Após o confronto, a informação de saída é o vencedor do confronto com os danos que 
+        sofreu e infringiu. Em outras palavras, conforme explicita a Figura 2, é preciso 
+        saber explicar o que ocorreu no duelo.
+    </p>
+<br>
+<br>
+    <h1 style="padding-left: 20px;">Personagens</h1>
+
+    <section id="jogabilidade">
+        <div id="div-personagens"></div>
+
+        </div>
+    </section>
+    
+    <script src="scripit/json_personagem.js"></script>
+</center>
+    <footer>Curso de TI da Estácio de Brasília em 2022.1 (TIEB 2022.1)
+        <BR>Todos os direitos reservados.</BR>
+        
+    </footer>
+</body>
+</html>

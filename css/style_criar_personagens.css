@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.box{
+    color: white;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 90%;
+}
+fieldset{
+    border: 3px solid black;
+}
+legend{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    border-radius: 8px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color:black;
+}
+#submit{
+    background-color:rgb(116, 238, 1);
+    width: 30%;
+    border: none;
+    padding: 15px;
+    color:black;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#add{
+    background-color:white;
+    width: auto;
+    border: none;
+    padding: 15px;
+    color:black;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#remover{
+    background-color:white;
+    width: auto;
+    border: none;
+    padding: 15px;
+    color:black;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-color:black;
+    color: red;
+}
